@@ -33,28 +33,11 @@
       </div>
     </header>
 
-    <section class="bg-arena-claro">
+    <section class="bg-blanco-hueso">
       <div class="relative mx-auto max-w-7xl overflow-hidden px-6 py-16">
-        <div
-          class="pointer-events-none absolute right-6 top-8 grid grid-cols-6 gap-2 opacity-40"
-          aria-hidden="true"
-        >
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-          <span class="size-1 rounded-full bg-terracota"></span>
-        </div>
-
         <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
-          <div>
+          <div class="relative lg:pr-12">
+            <span class="pointer-events-none absolute bottom-0 right-0 hidden w-px bg-beige lg:block lg:h-64"></span>
             <p class="text-sm font-semibold uppercase tracking-widest text-terracota">Contacto</p>
             <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
               Hablemos de
@@ -93,7 +76,7 @@
             </div>
           </div>
 
-          <form class="rounded-3xl bg-blanco-hueso p-8">
+          <form class="rounded-3xl bg-arena-claro p-8">
             <h2 class="text-lg font-bold">Envíame un mensaje</h2>
 
             <div class="mt-6 grid gap-4 sm:grid-cols-2">
@@ -125,15 +108,15 @@
               class="mt-4 w-full rounded-xl border border-beige bg-blanco-hueso px-4 py-3 text-sm placeholder:text-negro-profundo/40 focus:border-terracota focus:outline-none"
             ></textarea>
 
-            <div class="mt-4 flex flex-wrap items-center justify-between gap-4">
-              <label class="flex max-w-sm items-start gap-2 text-xs text-negro-profundo/60">
-                <input type="checkbox" name="consentimiento" class="mt-0.5 size-4 rounded border-beige text-terracota focus:ring-terracota" />
+            <div class="mt-4 flex flex-nowrap items-center justify-between gap-4">
+              <label class="flex items-start gap-2 text-xs text-negro-profundo/60">
+                <input type="checkbox" name="consentimiento" class="mt-0.5 size-4 shrink-0 rounded border-beige text-terracota focus:ring-terracota" />
                 Acepto el tratamiento de mis datos para responder a esta solicitud.
               </label>
 
               <button
                 type="submit"
-                class="inline-flex items-center gap-2 rounded-full bg-negro-profundo px-6 py-3 text-sm font-bold uppercase tracking-wide text-blanco-hueso transition hover:bg-negro-profundo/90"
+                class="inline-flex shrink-0 items-center gap-2 rounded-full bg-negro-profundo px-6 py-3 text-sm font-bold uppercase tracking-wide text-blanco-hueso transition hover:bg-negro-profundo/90"
               >
                 Enviar mensaje
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="size-4">
@@ -147,8 +130,9 @@
     </section>
 
     <section class="grid lg:grid-cols-2">
-      <div class="grid gap-10 bg-arena-claro px-6 py-16 sm:grid-cols-2 lg:px-12">
-        <div>
+      <div class="grid items-center gap-10 bg-arena-claro px-6 py-16 sm:grid-cols-2 lg:grid-cols-[65%_35%] lg:px-12">
+        <div class="relative flex flex-col items-center text-center sm:pr-10">
+          <span class="pointer-events-none absolute bottom-0 right-0 hidden w-px bg-beige sm:block sm:h-full"></span>
           <h2 class="text-2xl font-bold sm:text-3xl">
             Me puedes encontrar
             <span class="block italic text-terracota">aquí también</span>
